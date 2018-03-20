@@ -6,11 +6,35 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>PioneerWIKI</title>
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
   </head>
   <body>
-
+    <div data-sticky-container>
+      <div class="title-bar" data-sticky data-options="marginTop:0;" style="width:100%">
+        <div class="title-bar-left" style="margin-top: 10px">
+          <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
+          <span class="title-bar-title">Pioneer WIKI</span>
+        </div>
+      </div>
+  </div>
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+            <!-- Menu -->
+        <ul class="vertical menu">
+          <li><a href="#">Start Here</a></li>
+          <li><a href="#">All things Email</a></li>
+          <li><a href="#">Computers</a></li>
+          <li><a href="#">Planning</a></li>
+          <li><a href="#">Procurement</a></li>
+          <li><a href="#">Postal</a></li>
+          <li><a href="#">Acknowledgements</a></li>
+          <li><a href="#">Specific Jobs</a></li>
+          <li><a href="#">Data</a></li>
+          <li><a href="#">Inventory</a></li>
+        </ul>
+    </div>
+    
     {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
     {{> body}}
 
